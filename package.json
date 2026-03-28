@@ -1,0 +1,47 @@
+{
+  "name": "nuxt-travel-log",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "dev:db": "turso dev --db-file ./local.db",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.0",
+    "@nuxt/eslint": "1.15.2",
+    "@nuxt/icon": "2.2.1",
+    "@nuxtjs/color-mode": "4.0.0",
+    "@pinia/nuxt": "0.11.3",
+    "@tailwindcss/vite": "^4.2.1",
+    "better-auth": "^1.5.5",
+    "daisyui": "^5.5.19",
+    "drizzle-orm": "^0.45.1",
+    "eslint": "^10.0.3",
+    "nuxt": "^4.4.2",
+    "pinia": "^3.0.4",
+    "tailwindcss": "^4.2.1",
+    "vue": "^3.5.30",
+    "vue-router": "^5.0.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^7.7.2",
+    "@iconify-json/tabler": "^1.2.31",
+    "@types/node": "^25.5.0",
+    "drizzle-kit": "^0.31.9",
+    "eslint-plugin-format": "^2.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.3",
+    "tsx": "^4.21.0"
+  },
+  "lint-staged": {
+    "*": "pnpm lint"
+  }
+}
