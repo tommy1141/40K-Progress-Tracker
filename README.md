@@ -46,3 +46,13 @@ turso dev --db-file local.db
 ### Windows
 
 need to run the command in WSL in the root folder of this project
+
+## commands
+
+### rebuild the database
+
+1. stop server and turso server
+2. delete local.db files.
+3. run `pnpm drizzle-kit generate`
+4. run `pnpm dev:db`
+5. open new terminal and run `pnpm drizzle-kit migrate`
