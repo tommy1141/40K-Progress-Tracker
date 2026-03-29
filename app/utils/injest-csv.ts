@@ -1,8 +1,7 @@
-import { parse } from "csv-parse";
 import fs from "node:fs";
+import { parse } from "csv-parse";
 import db from "../lib/db";
 import { faction, unit } from "../lib/db/schema";
-import { log } from "node:console";
 
 type CsvRow = {
   Faction: string;
@@ -19,10 +18,10 @@ async function ingest() {
       .pipe(parse({ columns: true, trim: true }))
       .on("data", (row: CsvRow) => {
         if (row.Section === "Regular") {
-            let faction = row.Faction.trim();
-            if(!faction.toLowerCase().startsWith("codex") && !faction.toLowerCase().startsWith("index")) {
-                row.Faction = "LEGENDS: " + faction;
-            }
+          const faction = row.Faction.trim();
+          if (!faction.toLowerCase().startsWith("codex") && !faction.toLowerCase().startsWith("index")) {
+            row.Faction = `LEGENDS: ${faction}`;
+          }
           collected.push(row);
         }
       })
@@ -44,8 +43,6 @@ async function ingest() {
     factionId: factionMap.get(r.Faction)!,
   }));
   await db.insert(unit).values(unitRows).onConflictDoNothing();
-
-  console.log(`Inserted ${uniqueFactionNames.length} factions and ${unitRows.length} units.`);
 }
 
 ingest().catch(console.error);

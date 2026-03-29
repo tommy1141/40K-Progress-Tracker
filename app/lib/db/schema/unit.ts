@@ -1,5 +1,5 @@
-import { int, sqliteTable, text, unique } from "drizzle-orm/sqlite-core";
-import { faction } from './faction'
+import { int, sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { faction } from "./faction";
 
 export const unit = sqliteTable("unit", {
   id: int().primaryKey({ autoIncrement: true }),
