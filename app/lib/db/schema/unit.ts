@@ -6,3 +6,4 @@ export const unit = sqliteTable("unit", {
   name: text().notNull().unique(),
   factionId: int().notNull().references(() => faction.id),
 });
+export type Unit = typeof unit.$inferSelect;

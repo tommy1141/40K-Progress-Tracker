@@ -5,7 +5,7 @@ import "./app/lib/env";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxtjs/color-mode", "@pinia/nuxt"],
+  modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxtjs/color-mode", "@pinia/nuxt", "@vee-validate/nuxt"],
   css: ["./app/assets/css/main.css"],
   eslint: {
     config: {
@@ -19,5 +19,9 @@ export default defineNuxtConfig({
   },
   colorMode: {
     dataValue: "theme",
+  },
+  devServer: {
+    host: "0.0.0.0",
+    port: 3000,
   },
 });

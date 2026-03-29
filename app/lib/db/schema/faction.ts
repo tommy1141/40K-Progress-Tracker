@@ -4,3 +4,5 @@ export const faction = sqliteTable("faction", {
   id: int().primaryKey({ autoIncrement: true }),
   name: text().notNull(),
 });
+
+export type Faction = typeof faction.$inferSelect;

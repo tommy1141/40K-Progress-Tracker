@@ -12,3 +12,6 @@ export const userUnit = sqliteTable("user_unit", {
   paintedCount: int().notNull().default(0),
   battleReadyCount: int().notNull().default(0),
 });
+
+export type UserUnit = typeof userUnit.$inferSelect;
+export type UserUnitWithName = UserUnit & { unitName: string };

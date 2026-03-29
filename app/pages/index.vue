@@ -7,14 +7,14 @@ const authStore = useAuthStore();
     <div class="hero-content text-center min-h-96">
       <div class="max-w-md">
         <h1 class="text-5xl font-bold">
-          Travel Log
+          40K Progress Tracker
         </h1>
         <p class="py-6">
-          Keep track of your travels and adventures with simple travel log app. Add locations, dates, and notes to create a personalized travel journal. Start documenting your journeys today!
+          Track your Warhammer 40K collection and progress with ease. Log your units, monitor your collection, and stay organized as you build your army.
         </p>
         <AppAuthButton v-if="!authStore.loading && !authStore.user" />
         <NuxtLink v-else to="/dashboard" class="btn btn-primary">
-          Start Logging! <Icon name="tabler:map" size="32" class="ml-2" />
+          Start Tracking! <Icon name="tabler:building-warehouse" size="32" class="ml-2" />
         </nuxtlink>
       </div>
     </div>
