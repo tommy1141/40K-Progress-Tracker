@@ -1,18 +1,31 @@
 <script lang="ts" setup>
-import type { UserUnitWithName } from "~/lib/db/schema";
+import type { UserUnitWithNameAndFaction } from "../../lib/db/schema";
 
 defineProps<{
-  userUnit: UserUnitWithName;
+  userUnit: UserUnitWithNameAndFaction;
 }>();
 </script>
 
 <template>
-  <div class="flex-row gap-3 card bg-base-200 shadow-md p-4 border-1 justify-between">
-    <AppStatCard title="Unit" :value="userUnit.unitName" />
-    <AppStatCard title="In Box" :value="userUnit.boxedCount" />
-    <AppStatCard title="Built" :value="userUnit.builtCount" />
-    <AppStatCard title="Primed" :value="userUnit.primedCount" />
-    <AppStatCard title="Painted" :value="userUnit.paintedCount" />
-    <AppStatCard title="Battle Ready!" :value="userUnit.battleReadyCount" />
-  </div>
+  <tbody class="hover:bg-base-300 ">
+    <tr class="divide-x">
+      <td>{{ userUnit.factionName }}</td>
+      <td>{{ userUnit.unitName }}</td>
+      <td class="text-center">
+        {{ userUnit.boxedCount }}
+      </td>
+      <td class="text-center">
+        {{ userUnit.builtCount }}
+      </td>
+      <td class="text-center">
+        {{ userUnit.primedCount }}
+      </td>
+      <td class="text-center ">
+        {{ userUnit.paintedCount }}
+      </td>
+      <td class="text-center">
+        {{ userUnit.battleReadyCount }}
+      </td>
+    </tr>
+  </tbody>
 </template>

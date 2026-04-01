@@ -49,6 +49,13 @@ need to run the command in WSL in the root folder of this project
 
 ## commands
 
+### Start Dev
+
+1. cd into `/mnt/c/Dve/40K-Progress-Tracker`
+2. run `turso dev --db-file ./local.db`
+3. run `pnpm dbs`
+4. run `pnpm dev`
+
 ### rebuild the database
 
 1. stop server and turso server

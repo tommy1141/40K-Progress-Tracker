@@ -1,15 +1,6 @@
 <script setup lang="ts">
-import { getUserUnits } from "~/lib/db/queries/user-unit";
-
-const headers = useRequestHeaders(["cookie"]);
-
-const userUnits = await getUserUnits(headers).catch(async (error) => {
-  if (error?.statusCode === 401) {
-    await navigateTo("/");
-    return [];
-  }
-  throw error;
-});
+const userStore = useUserStore();
+await userStore.fetchUserUnits();
 </script>
 
 <template>
@@ -20,10 +11,10 @@ const userUnits = await getUserUnits(headers).catch(async (error) => {
     <p class="text-gray-600 mb-6">
       Track your Warhammer 40K collection progress here.
     </p>
-
+    <AppFactionDropDown />
     <div class="container">
       <div>
-        <AppUserUnitList v-if="userUnits.length > 0" :user-units="userUnits" />
+        <AppUserUnitList v-if="userStore.filteredUserUnits().length > 0" :user-units="userStore.filteredUserUnits()" />
         <p v-else>
           No units in your collection yet.
         </p>

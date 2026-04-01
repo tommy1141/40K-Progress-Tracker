@@ -15,3 +15,4 @@ export const userUnit = sqliteTable("user_unit", {
 
 export type UserUnit = typeof userUnit.$inferSelect;
 export type UserUnitWithName = UserUnit & { unitName: string };
+export type UserUnitWithNameAndFaction = Omit<UserUnit, "userId"> & { unitName: string; factionName: string };
