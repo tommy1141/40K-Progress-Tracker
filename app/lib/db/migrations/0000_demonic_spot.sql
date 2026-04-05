@@ -56,6 +56,7 @@ CREATE TABLE `faction` (
 	`name` text NOT NULL
 );
 --> statement-breakpoint
+CREATE UNIQUE INDEX `faction_name_unique` ON `faction` (`name`);--> statement-breakpoint
 CREATE TABLE `unit` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`name` text NOT NULL,
@@ -68,11 +69,13 @@ CREATE TABLE `user_unit` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`user_id` integer NOT NULL,
 	`unit_id` integer NOT NULL,
+	`faction_id` integer NOT NULL,
 	`boxed_count` integer DEFAULT 0 NOT NULL,
 	`built_count` integer DEFAULT 0 NOT NULL,
 	`primed_count` integer DEFAULT 0 NOT NULL,
 	`painted_count` integer DEFAULT 0 NOT NULL,
 	`battle_ready_count` integer DEFAULT 0 NOT NULL,
 	FOREIGN KEY (`user_id`) REFERENCES `user`(`id`) ON UPDATE no action ON DELETE no action,
-	FOREIGN KEY (`unit_id`) REFERENCES `unit`(`id`) ON UPDATE no action ON DELETE no action
+	FOREIGN KEY (`unit_id`) REFERENCES `unit`(`id`) ON UPDATE no action ON DELETE no action,
+	FOREIGN KEY (`faction_id`) REFERENCES `faction`(`id`) ON UPDATE no action ON DELETE no action
 );

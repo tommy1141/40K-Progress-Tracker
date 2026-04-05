@@ -4,8 +4,8 @@ import type { UserUnitWithNameAndFaction } from "~/lib/db/schema";
 const userStore = useUserStore();
 await userStore.fetchUserUnits();
 
-const selectedIntent = ref<"build" | "paint" | null>(null);
 const selectedUnit = ref<UserUnitWithNameAndFaction | null>(null);
+const hasChosen = ref(false);
 
 function pickRandomUnit(units: UserUnitWithNameAndFaction[]) {
   if (units.length === 0) {
@@ -16,39 +16,27 @@ function pickRandomUnit(units: UserUnitWithNameAndFaction[]) {
   return units[index] || null;
 }
 
-function chooseBuildUnit() {
-  selectedIntent.value = "build";
-  const boxedUnits = userStore.userUnits.filter(unit => unit.boxedCount > 0);
-  selectedUnit.value = pickRandomUnit(boxedUnits);
+function chooseForMe() {
+  hasChosen.value = true;
+  const actionableUnits = userStore.filteredUserUnits().filter(
+    unit => unit.boxedCount > 0 || unit.builtCount > 0 || unit.primedCount > 0,
+  );
+  selectedUnit.value = pickRandomUnit(actionableUnits);
 }
 
-function choosePaintUnit() {
-  selectedIntent.value = "paint";
-  const paintableUnits = userStore.userUnits.filter(unit => unit.builtCount > 0 || unit.primedCount > 0);
-  selectedUnit.value = pickRandomUnit(paintableUnits);
-}
-
-const emptyStateMessage = computed(() => {
-  if (selectedIntent.value === "build") {
-    return "No boxed units are available to build right now.";
-  }
-
-  if (selectedIntent.value === "paint") {
-    return "No built or primed units are available to paint right now.";
-  }
-
-  return "";
+const suggestion = computed(() => {
+  if (!selectedUnit.value)
+    return "";
+  if (selectedUnit.value.boxedCount > 0)
+    return "build";
+  return "prime and paint";
 });
 
-const selectedCount = computed(() => {
-  if (!selectedUnit.value || !selectedIntent.value) {
+const suggestionCount = computed(() => {
+  if (!selectedUnit.value)
     return 0;
-  }
-
-  if (selectedIntent.value === "build") {
+  if (selectedUnit.value.boxedCount > 0)
     return selectedUnit.value.boxedCount;
-  }
-
   return selectedUnit.value.builtCount + selectedUnit.value.primedCount;
 });
 </script>
@@ -64,12 +52,15 @@ const selectedCount = computed(() => {
           Snapshot of your current collection.
         </p>
       </div>
-      <NuxtLink class="btn btn-primary" to="/dashboard/collection/">
-        View Collection
-      </NuxtLink>
+      <div class="flex items-center gap-2">
+        <AppFactionDropDown :factions="userStore.uniqueFactions" />
+        <NuxtLink class="btn btn-primary" to="/dashboard/collection/">
+          View Collection
+        </NuxtLink>
+      </div>
     </section>
 
-    <AppCollectionProgressPie :user-units="userStore.userUnits" />
+    <AppCollectionProgressPie :user-units="userStore.filteredUserUnits()" />
 
     <section class="card bg-base-100 shadow-md border border-base-300">
       <div class="card-body gap-4">
@@ -81,11 +72,8 @@ const selectedCount = computed(() => {
         </p>
 
         <div class="flex flex-wrap gap-3">
-          <button class="btn btn-primary" type="button" @click="chooseBuildUnit">
-            I want to build
-          </button>
-          <button class="btn btn-secondary" type="button" @click="choosePaintUnit">
-            I want to Paint
+          <button class="btn btn-primary" type="button" @click="chooseForMe">
+            Choose for me
           </button>
         </div>
 
@@ -97,13 +85,13 @@ const selectedCount = computed(() => {
             {{ selectedUnit.unitName }}
           </p>
           <p class="text-sm opacity-80 mt-1">
-            {{ selectedUnit.factionName }} • {{ selectedCount }} available for this activity.
+            {{ selectedUnit.factionName }} • You should <strong>{{ suggestion }}</strong> this — {{ suggestionCount }} available.
           </p>
         </div>
 
-        <div v-else-if="selectedIntent" class="rounded-lg border border-warning/40 bg-warning/10 p-4">
+        <div v-else-if="hasChosen" class="rounded-lg border border-warning/40 bg-warning/10 p-4">
           <p class="text-sm">
-            {{ emptyStateMessage }}
+            No units are available for any activity right now.
           </p>
           <a
             class="link link-primary mt-2 inline-block"

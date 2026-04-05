@@ -14,6 +14,9 @@ const authStore = useAuthStore();
       <NuxtLink v-if="!authStore.loading && authStore.user" to="/dashboard/collection" class="btn btn-ghost  text-xl">
         My Collection
       </NuxtLink>
+      <NuxtLink v-if="!authStore.loading && authStore.user" to="/dashboard/collection/add-unit" class="btn btn-ghost  text-xl">
+        Add Unit
+      </NuxtLink>
     </div>
 
     <div class="navbar-end">

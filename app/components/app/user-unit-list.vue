@@ -20,6 +20,7 @@ defineProps<{
             <th>primed</th>
             <th>painted</th>
             <th>battle ready</th>
+            <th />
           </tr>
         </thead>
         <AppUserUnitCard v-for="userUnit in userUnits" :key="userUnit.id" :user-unit="userUnit" class="odd:bg-base-400 even:bg-base-100" />

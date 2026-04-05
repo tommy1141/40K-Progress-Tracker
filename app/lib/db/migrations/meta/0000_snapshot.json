@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "320b9da5-2b2f-4038-b8e2-f759ceda72b2",
+  "id": "131b946b-e26f-4f88-b93f-f66d14c16b18",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "account": {
@@ -368,7 +368,15 @@
           "autoincrement": false
         }
       },
-      "indexes": {},
+      "indexes": {
+        "faction_name_unique": {
+          "name": "faction_name_unique",
+          "columns": [
+            "name"
+          ],
+          "isUnique": true
+        }
+      },
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
@@ -451,6 +459,13 @@
           "notNull": true,
           "autoincrement": false
         },
+        "faction_id": {
+          "name": "faction_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
         "boxed_count": {
           "name": "boxed_count",
           "type": "integer",
@@ -513,6 +528,19 @@
           "tableTo": "unit",
           "columnsFrom": [
             "unit_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "user_unit_faction_id_faction_id_fk": {
+          "name": "user_unit_faction_id_faction_id_fk",
+          "tableFrom": "user_unit",
+          "tableTo": "faction",
+          "columnsFrom": [
+            "faction_id"
           ],
           "columnsTo": [
             "id"
