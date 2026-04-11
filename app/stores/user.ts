@@ -64,6 +64,18 @@ export const useUserStore = defineStore("useUserStore", () => {
     (unit[to] as number) += 1;
   }
 
+  async function adjustCount(id: number, field: keyof UserUnitWithNameAndFaction, delta: number) {
+    const unit = userUnits.value.find(u => u.id === id);
+    if (!unit)
+      return;
+    const current = unit[field] as number;
+    const next = Math.max(0, current + delta);
+    if (next === current)
+      return;
+    await $fetch(`/api/user-unit/${id}`, { method: "PATCH", body: { [field]: next } });
+    (unit[field] as number) = next;
+  }
+
   return {
     userUnits,
     setFactionFilter,
@@ -75,5 +87,6 @@ export const useUserStore = defineStore("useUserStore", () => {
     uniqueFactions,
     deleteUserUnit,
     progressUnit,
+    adjustCount,
   };
 });
