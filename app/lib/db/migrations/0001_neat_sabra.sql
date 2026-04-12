@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `user_unit_unique` ON `user_unit` (`user_id`,`unit_id`);

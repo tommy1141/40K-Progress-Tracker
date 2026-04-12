@@ -330,26 +330,26 @@ CODEX: AELDARI,Detachment Enhancement,Breath of Vaul,Guardian Battlehost,10
 CODEX: AELDARI,Detachment Enhancement,Craftworld’s Champion,Guardian Battlehost,25
 CODEX: AELDARI,Detachment Enhancement,Ethereal Pathway,Guardian Battlehost,30
 CODEX: AELDARI,Detachment Enhancement,Protector of the Paths,Guardian Battlehost,20
-CODEX: AELDARI,Regular,Seer Council,Lucid Eye,30
-CODEX: AELDARI,Regular,Seer Council,Runes of Warding,25
-CODEX: AELDARI,Regular,Seer Council,Stone of Eldritch Fury,15
-CODEX: AELDARI,Regular,Seer Council,Torc of Morai-Heg,20
-CODEX: AELDARI,Regular,Spirit Conclave,Higher Duty,25
-CODEX: AELDARI,Regular,Spirit Conclave,Light of Clarity,30
-CODEX: AELDARI,Regular,Spirit Conclave,Rune of Mists,10
-CODEX: AELDARI,Regular,Spirit Conclave,Stave of Kurnous,15
-CODEX: AELDARI,Regular,Serpent’s Brood,Fanged Leer,10
-CODEX: AELDARI,Regular,Serpent’s Brood,Key of Ghosts,20
-CODEX: AELDARI,Regular,Serpent’s Brood,Shedskin Raiment,25
-CODEX: AELDARI,Regular,Serpent’s Brood,Weavers’ Wail,20
-CODEX: AELDARI,Regular,Warhost,Gift of Foresight,15
-CODEX: AELDARI,Regular,Warhost,Phoenix Gem,35
-CODEX: AELDARI,Regular,Warhost,Psychic Destroyer,30
-CODEX: AELDARI,Regular,Warhost,Timeless Strategist,15
-CODEX: AELDARI,Regular,Windrider Host,Echoes of Ulthanesh,20
-CODEX: AELDARI,Regular,Windrider Host,Firstdrawn Blade,10
-CODEX: AELDARI,Regular,Windrider Host,Mirage Field,25
-CODEX: AELDARI,Regular,Windrider Host,Seersight Strike,15
+CODEX: AELDARI,Detachment Enhancement,Lucid Eye,Seer Council,30
+CODEX: AELDARI,Detachment Enhancement,Runes of Warding,Seer Council,25
+CODEX: AELDARI,Detachment Enhancement,Stone of Eldritch Fury,Seer Council,15
+CODEX: AELDARI,Detachment Enhancement,Torc of Morai-Heg,Seer Council,20
+CODEX: AELDARI,Detachment Enhancement,Higher Duty,Spirit Conclave,25
+CODEX: AELDARI,Detachment Enhancement,Light of Clarity,Spirit Conclave,30
+CODEX: AELDARI,Detachment Enhancement,Rune of Mists,Spirit Conclave,10
+CODEX: AELDARI,Detachment Enhancement,Stave of Kurnous,Spirit Conclave,15
+CODEX: AELDARI,Detachment Enhancement,Fanged Leer,Serpent’s Brood,10
+CODEX: AELDARI,Detachment Enhancement,Key of Ghosts,Serpent’s Brood,20
+CODEX: AELDARI,Detachment Enhancement,Shedskin Raiment,Serpent’s Brood,25
+CODEX: AELDARI,Detachment Enhancement,Weavers’ Wail,Serpent’s Brood,20
+CODEX: AELDARI,Detachment Enhancement,Gift of Foresight,Warhost,15
+CODEX: AELDARI,Detachment Enhancement,Phoenix Gem,Warhost,35
+CODEX: AELDARI,Detachment Enhancement,Psychic Destroyer,Warhost,30
+CODEX: AELDARI,Detachment Enhancement,Timeless Strategist,Warhost,15
+CODEX: AELDARI,Detachment Enhancement,Echoes of Ulthanesh,Windrider Host,20
+CODEX: AELDARI,Detachment Enhancement,Firstdrawn Blade,Windrider Host,10
+CODEX: AELDARI,Detachment Enhancement,Mirage Field,Windrider Host,25
+CODEX: AELDARI,Detachment Enhancement,Seersight Strike,Windrider Host,15
 CODEX: ASTRA MILITARUM,Regular,Aegis Defence Line,1 model,145
 CODEX: ASTRA MILITARUM,Regular,Armoured Sentinels,1 model,65
 CODEX: ASTRA MILITARUM,Regular,Armoured Sentinels,2 models,130
@@ -515,26 +515,26 @@ CODEX: BLOOD ANGELS,Regular,Sanguinary Guard,3 models,125
 CODEX: BLOOD ANGELS,Regular,Sanguinary Guard,6 models,260
 CODEX: BLOOD ANGELS,Regular,Sanguinary Priest,1 model,75
 CODEX: BLOOD ANGELS,Regular,The Sanguinor,1 model,130
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Blazing Icon,Angelic Inheritors,20
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Ordained Sacriflce,Angelic Inheritors,25
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Prescient Flash,Angelic Inheritors,20
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Troubling Visions,Angelic Inheritors,15
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Gift of Foresight,Liberator Assault Group,15
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Icon of the Angel,Liberator Assault Group,20
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Rage-fuelled Warrior,Liberator Assault Group,35
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Speed of the Primarch,Liberator Assault Group,25
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Angel’s Fang,Rage-cursed Onslaught,25
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Carmine Reliquary,Rage-cursed Onslaught,30
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Master of the Red Thirst,Rage-cursed Onslaught,25
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Sanguinary Tear,Rage-cursed Onslaught,35
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Archangel’s Shard,The Angelic Host,15
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Artisan of War,The Angelic Host,20
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Gleaming Pinions,The Angelic Host,25
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Visage of Death,The Angelic Host,15
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Blood Shard,The Lost Brethren,25
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Sanguinius’ Grace,The Lost Brethren,20
-CODEX: BLACK TEMPLARS,Detachment Enhancement,To Slay the Warmaster,The Lost Brethren,15
-CODEX: BLACK TEMPLARS,Detachment Enhancement,Vengeful Onslaught,The Lost Brethren,10
+CODEX: BLOOD ANGELS,Detachment Enhancement,Blazing Icon,Angelic Inheritors,20
+CODEX: BLOOD ANGELS,Detachment Enhancement,Ordained Sacriflce,Angelic Inheritors,25
+CODEX: BLOOD ANGELS,Detachment Enhancement,Prescient Flash,Angelic Inheritors,20
+CODEX: BLOOD ANGELS,Detachment Enhancement,Troubling Visions,Angelic Inheritors,15
+CODEX: BLOOD ANGELS,Detachment Enhancement,Gift of Foresight,Liberator Assault Group,15
+CODEX: BLOOD ANGELS,Detachment Enhancement,Icon of the Angel,Liberator Assault Group,20
+CODEX: BLOOD ANGELS,Detachment Enhancement,Rage-fuelled Warrior,Liberator Assault Group,35
+CODEX: BLOOD ANGELS,Detachment Enhancement,Speed of the Primarch,Liberator Assault Group,25
+CODEX: BLOOD ANGELS,Detachment Enhancement,Angel’s Fang,Rage-cursed Onslaught,25
+CODEX: BLOOD ANGELS,Detachment Enhancement,Carmine Reliquary,Rage-cursed Onslaught,30
+CODEX: BLOOD ANGELS,Detachment Enhancement,Master of the Red Thirst,Rage-cursed Onslaught,25
+CODEX: BLOOD ANGELS,Detachment Enhancement,Sanguinary Tear,Rage-cursed Onslaught,35
+CODEX: BLOOD ANGELS,Detachment Enhancement,Archangel’s Shard,The Angelic Host,15
+CODEX: BLOOD ANGELS,Detachment Enhancement,Artisan of War,The Angelic Host,20
+CODEX: BLOOD ANGELS,Detachment Enhancement,Gleaming Pinions,The Angelic Host,25
+CODEX: BLOOD ANGELS,Detachment Enhancement,Visage of Death,The Angelic Host,15
+CODEX: BLOOD ANGELS,Detachment Enhancement,Blood Shard,The Lost Brethren,25
+CODEX: BLOOD ANGELS,Detachment Enhancement,Sanguinius’ Grace,The Lost Brethren,20
+CODEX: BLOOD ANGELS,Detachment Enhancement,To Slay the Warmaster,The Lost Brethren,15
+CODEX: BLOOD ANGELS,Detachment Enhancement,Vengeful Onslaught,The Lost Brethren,10
 INDEX: CHAOS DAEMONS,Regular,Beasts of Nurgle,1 model,65
 INDEX: CHAOS DAEMONS,Regular,Beasts of Nurgle,2 models,130
 INDEX: CHAOS DAEMONS,Regular,Be’lakor,1 model,375
@@ -774,10 +774,10 @@ CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Forge’s Blessing,Soulforged 
 CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Invigorated Mechatendrils,Soulforged Warpack,15
 CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Tempting Addendum,Soulforged Warpack,25
 CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Soul Harvester,Soulforged Warpack,15
-CODEX: CHAOS SPACE MARINES,Regular,Veterans of the Long War,Eager for Vengeance,20
-CODEX: CHAOS SPACE MARINES,Regular,Veterans of the Long War,Eye of Abaddon,15
-CODEX: CHAOS SPACE MARINES,Regular,Veterans of the Long War,Mark of Legend,10
-CODEX: CHAOS SPACE MARINES,Regular,Veterans of the Long War,Warmaster’s Gift,15
+CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Eager for Vengeance,Veterans of the Long War,20
+CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Eye of Abaddon,Veterans of the Long War,15
+CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Mark of Legend,Veterans of the Long War,10
+CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Warmaster’s Gift,Veterans of the Long War,15
 CODEX: DARK ANGELS,Regular,Asmodai,1 model,70
 CODEX: DARK ANGELS,Regular,Azrael,1 model,125
 CODEX: DARK ANGELS,Regular,Belial,1 model,85
@@ -788,35 +788,35 @@ CODEX: DARK ANGELS,Regular,Ezekiel,1 model,75
 CODEX: DARK ANGELS,Regular,Inner Circle Companions,3 models,90
 CODEX: DARK ANGELS,Regular,Inner Circle Companions,6 models,180
 CODEX: DARK ANGELS,Regular,Land Speeder Vengeance,1 model,120
-CODEX: CHAOS SPACE MARINES,Regular,Lazarus,1 model,70
-CODEX: CHAOS SPACE MARINES,Regular,Lion El’Jonson,1 model,315
-CODEX: CHAOS SPACE MARINES,Regular,Nephilim Jetfighter,1 model,195
-CODEX: CHAOS SPACE MARINES,Regular,Ravenwing Black Knights,3 models,80
-CODEX: CHAOS SPACE MARINES,Regular,Ravenwing Black Knights,6 models,160
-CODEX: CHAOS SPACE MARINES,Regular,Ravenwing Command Squad,3 models,120
-CODEX: CHAOS SPACE MARINES,Regular,Ravenwing Dark Talon,1 model,210
-CODEX: CHAOS SPACE MARINES,Regular,Ravenwing Darkshroud,1 model,100
-CODEX: CHAOS SPACE MARINES,Regular,Sammael,1 model,115
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Master of Manoeuvre,Company of Hunters,15
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Master-crafted Weapon,Company of Hunters,10
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Mounted Strategist,Company of Hunters,30
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Recon Hunter,Company of Hunters,20
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Champion of the Deathwing,Inner Circle Task Force,15
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Deathwing Assault,Inner Circle Task Force,30
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Eye of the Unseen,Inner Circle Task Force,10
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Singular Will,Inner Circle Task Force,20
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Calibanite Armaments,Lion’s Blade Task Force,15
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Fulgus Magna,Lion’s Blade Task Force,20
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Lord of the Hunt,Lion’s Blade Task Force,15
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Stalwart Champion,Lion’s Blade Task Force,25
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Pennant of Remembrance,Unforgiven Task Force,10
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Shroud of Heroes,Unforgiven Task Force,25
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Stubborn Tenacity,Unforgiven Task Force,15
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Weapons of the First Legion,Unforgiven Task Force,15
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Ancient Weapons,Wrath of the Rock,25
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Deathwing Assault,Wrath of the Rock,15
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Lord of the Ravenwing,Wrath of the Rock,10
-CODEX: CHAOS SPACE MARINES,Detachment Enhancement,Tempered inBattle,Wrath of the Rock,10
+CODEX: DARK ANGELS,Regular,Lazarus,1 model,70
+CODEX: DARK ANGELS,Regular,Lion El’Jonson,1 model,315
+CODEX: DARK ANGELS,Regular,Nephilim Jetfighter,1 model,195
+CODEX: DARK ANGELS,Regular,Ravenwing Black Knights,3 models,80
+CODEX: DARK ANGELS,Regular,Ravenwing Black Knights,6 models,160
+CODEX: DARK ANGELS,Regular,Ravenwing Command Squad,3 models,120
+CODEX: DARK ANGELS,Regular,Ravenwing Dark Talon,1 model,210
+CODEX: DARK ANGELS,Regular,Ravenwing Darkshroud,1 model,100
+CODEX: DARK ANGELS,Regular,Sammael,1 model,115
+CODEX: DARK ANGELS,Detachment Enhancement,Master of Manoeuvre,Company of Hunters,15
+CODEX: DARK ANGELS,Detachment Enhancement,Master-crafted Weapon,Company of Hunters,10
+CODEX: DARK ANGELS,Detachment Enhancement,Mounted Strategist,Company of Hunters,30
+CODEX: DARK ANGELS,Detachment Enhancement,Recon Hunter,Company of Hunters,20
+CODEX: DARK ANGELS,Detachment Enhancement,Champion of the Deathwing,Inner Circle Task Force,15
+CODEX: DARK ANGELS,Detachment Enhancement,Deathwing Assault,Inner Circle Task Force,30
+CODEX: DARK ANGELS,Detachment Enhancement,Eye of the Unseen,Inner Circle Task Force,10
+CODEX: DARK ANGELS,Detachment Enhancement,Singular Will,Inner Circle Task Force,20
+CODEX: DARK ANGELS,Detachment Enhancement,Calibanite Armaments,Lion’s Blade Task Force,15
+CODEX: DARK ANGELS,Detachment Enhancement,Fulgus Magna,Lion’s Blade Task Force,20
+CODEX: DARK ANGELS,Detachment Enhancement,Lord of the Hunt,Lion’s Blade Task Force,15
+CODEX: DARK ANGELS,Detachment Enhancement,Stalwart Champion,Lion’s Blade Task Force,25
+CODEX: DARK ANGELS,Detachment Enhancement,Pennant of Remembrance,Unforgiven Task Force,10
+CODEX: DARK ANGELS,Detachment Enhancement,Shroud of Heroes,Unforgiven Task Force,25
+CODEX: DARK ANGELS,Detachment Enhancement,Stubborn Tenacity,Unforgiven Task Force,15
+CODEX: DARK ANGELS,Detachment Enhancement,Weapons of the First Legion,Unforgiven Task Force,15
+CODEX: DARK ANGELS,Detachment Enhancement,Ancient Weapons,Wrath of the Rock,25
+CODEX: DARK ANGELS,Detachment Enhancement,Deathwing Assault,Wrath of the Rock,15
+CODEX: DARK ANGELS,Detachment Enhancement,Lord of the Ravenwing,Wrath of the Rock,10
+CODEX: DARK ANGELS,Detachment Enhancement,Tempered inBattle,Wrath of the Rock,10
 CODEX: DEATH GUARD,Regular,Biologus Putrifier,1 model,60
 CODEX: DEATH GUARD,Regular,Blightlord Terminators,3 models,115
 CODEX: DEATH GUARD,Regular,Blightlord Terminators,5 models,185
@@ -1183,35 +1183,35 @@ CODEX: IMPERIAL AGENTS,Detachment Enhancement,Decoy Targets,Veiled Blade Elimina
 CODEX: IMPERIAL AGENTS,Detachment Enhancement,Esoteric Explosives,Veiled Blade Elimination Force,40
 CODEX: IMPERIAL AGENTS,Detachment Enhancement,Intraneural Biotech,Veiled Blade Elimination Force,35
 CODEX: IMPERIAL AGENTS,Detachment Enhancement,Micromelta Rounds,Veiled Blade Elimination Force,45
-CODEX: IMPERIAL AGENTS,Regular,Aquila Kill Team,5 models,100
-CODEX: IMPERIAL AGENTS,Regular,Aquila Kill Team,10 models,200
-CODEX: IMPERIAL AGENTS,Regular,Callidus Assassin,1 model,100
-CODEX: IMPERIAL AGENTS,Regular,Corvus Blackstar,1 model,180
-CODEX: IMPERIAL AGENTS,Regular,Culexus Assassin,1 model,85
-CODEX: IMPERIAL AGENTS,Regular,Deathwatch Kill Team,5 models,100
-CODEX: IMPERIAL AGENTS,Regular,Deathwatch Kill Team,10 models,200
-CODEX: IMPERIAL AGENTS,Regular,Eversor Assassin,1 model,120
-CODEX: IMPERIAL AGENTS,Regular,Exaction Squad,11 models,90
-CODEX: IMPERIAL AGENTS,Regular,Grey Knights Terminator Squad,5 models,210
-CODEX: IMPERIAL AGENTS,Regular,Imperial Navy Breachers,10 models,90
-CODEX: IMPERIAL AGENTS,Regular,Inquisitor,1 model,65
-CODEX: IMPERIAL AGENTS,Regular,Inquisitor Coteaz,1 model,95
-CODEX: IMPERIAL AGENTS,Regular,Inquisitor Draxus,1 model,110
-CODEX: IMPERIAL AGENTS,Regular,Inquisitor Greyfax,1 model,65
-CODEX: IMPERIAL AGENTS,Regular,Inquisitorial Agents,6 models,60
-CODEX: IMPERIAL AGENTS,Regular,Inquisitorial Agents,12 models,120
-CODEX: IMPERIAL AGENTS,Regular,Inquisitorial Chimera,1 model,70
-CODEX: IMPERIAL AGENTS,Regular,Ministorum Priest,1 model,40
-CODEX: IMPERIAL AGENTS,Regular,Navigator,1 model,75
-CODEX: IMPERIAL AGENTS,Regular,Rogue Trader Entourage,4 models,105
-CODEX: IMPERIAL AGENTS,Regular,Sisters of Battle Immolator,1 model,115
-CODEX: IMPERIAL AGENTS,Regular,Sisters of Battle Squad,1 model,115
-CODEX: IMPERIAL AGENTS,Regular,Subductor Squad,11 models,100
-CODEX: IMPERIAL AGENTS,Regular,Vigilant Squad,11 models,85
-CODEX: IMPERIAL AGENTS,Regular,Vindicare Assassin,1 model,125
-CODEX: IMPERIAL AGENTS,Regular,Voidsmen-at-Arms,6 models,70
-CODEX: IMPERIAL AGENTS,Regular,Watch Captain Artemis,1 model,65
-CODEX: IMPERIAL AGENTS,Regular,Watch Master,1 model,105
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,5 models,Aquila Kill Team,100
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,10 models,Aquila Kill Team,200
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Callidus Assassin,100
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Corvus Blackstar,180
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Culexus Assassin,85
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,5 models,Deathwatch Kill Team,100
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,10 models,Deathwatch Kill Team,200
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Eversor Assassin,120
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,11 models,Exaction Squad,90
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,5 models,Grey Knights Terminator Squad,210
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,10 models,Imperial Navy Breachers,90
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Inquisitor,65
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Inquisitor Coteaz,95
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Inquisitor Draxus,110
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Inquisitor Greyfax,65
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,6 models,Inquisitorial Agents,60
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,12 models,Inquisitorial Agents,120
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Inquisitorial Chimera,70
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Ministorum Priest,40
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Navigator,75
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,4 models,Rogue Trader Entourage,105
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Sisters of Battle Immolator,115
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Sisters of Battle Squad,115
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,11 models,Subductor Squad,100
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,11 models,Vigilant Squad,85
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Vindicare Assassin,125
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,6 models,Voidsmen-at-Arms,70
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Watch Captain Artemis,65
+CODEX: IMPERIAL AGENTS,Detachment Enhancement,1 model,Watch Master,105
 CODEX: IMPERIAL KNIGHTS,Regular,Armiger Helverin,1 model,135
 CODEX: IMPERIAL KNIGHTS,Regular,Armiger Warglaive,1 model,140
 CODEX: IMPERIAL KNIGHTS,Regular,Canis Rex,1 model,415
@@ -1672,45 +1672,45 @@ CODEX: SPACE MARINES,Detachment Enhancement,Adamantine Mantle,Forgefather’s Se
 CODEX: SPACE MARINES,Detachment Enhancement,Forged in Battle,Forgefather’s Seekers,15
 CODEX: SPACE MARINES,Detachment Enhancement,Immolator,Forgefather’s Seekers,10
 CODEX: SPACE MARINES,Detachment Enhancement,War-tempered Artiflce,Forgefather’s Seekers,25
-CODEX: SPACE MARINES,Regular,Gladius Task Force,Adept of the Codex,20
-CODEX: SPACE MARINES,Regular,Gladius Task Force,Artiflcer Armour,10
-CODEX: SPACE MARINES,Regular,Gladius Task Force,Fire Discipline,25
-CODEX: SPACE MARINES,Regular,Gladius Task Force,The Honour Vehement,15
-CODEX: SPACE MARINES,Regular,Hammer of Avernii,Iron Laurel,10
-CODEX: SPACE MARINES,Regular,Hammer of Avernii,Medusan Roar,30
-CODEX: SPACE MARINES,Regular,Hammer of Avernii,Spiritus Ferrum,25
-CODEX: SPACE MARINES,Regular,Hammer of Avernii,Steel Font,15
-CODEX: SPACE MARINES,Regular,Ironstorm Spearhead,Adept of the Omnissiah,35
-CODEX: SPACE MARINES,Regular,Ironstorm Spearhead,Master of Machine War,20
-CODEX: SPACE MARINES,Regular,Ironstorm Spearhead,Target Augury Web,30
-CODEX: SPACE MARINES,Regular,Ironstorm Spearhead,The Flesh is Weak,10
-CODEX: SPACE MARINES,Regular,Librarius Conclave,Celerity,30
-CODEX: SPACE MARINES,Regular,Librarius Conclave,Fusillade,35
-CODEX: SPACE MARINES,Regular,Librarius Conclave,Obfuscation,20
-CODEX: SPACE MARINES,Regular,Librarius Conclave,Prescience,25
-CODEX: SPACE MARINES,Regular,Orbital Assault Force,Dedicated Gunship,15
-CODEX: SPACE MARINES,Regular,Orbital Assault Force,Laurels of Thunder,15
-CODEX: SPACE MARINES,Regular,Orbital Assault Force,Orbital Uplink Reliquary,25
-CODEX: SPACE MARINES,Regular,Orbital Assault Force,Veteran of the Vanguard,20
-CODEX: SPACE MARINES,Regular,Reclamation Force,Avenging Avatar,10
-CODEX: SPACE MARINES,Regular,Reclamation Force,Liberatum,25
-CODEX: SPACE MARINES,Regular,Reclamation Force,Scroll of Proclamation,15
-CODEX: SPACE MARINES,Regular,Reclamation Force,Seals of Reconquest,20
-CODEX: SPACE MARINES,Regular,Shadowmark Talon,Blackwing Shroud,25
-CODEX: SPACE MARINES,Regular,Shadowmark Talon,Coronal Susurrant,30
-CODEX: SPACE MARINES,Regular,Shadowmark Talon,Hunter’s Instincts,25
-CODEX: SPACE MARINES,Regular,Shadowmark Talon,Umbral Raptor,15
-CODEX: SPACE MARINES,Regular,Spearpoint Task Force,Chogorian Huntmaster,25
-CODEX: SPACE MARINES,Regular,Spearpoint Task Force,Hunter’s Eye,20
-CODEX: SPACE MARINES,Regular,Spearpoint Task Force,Spearpoint Paragon,25
-CODEX: SPACE MARINES,Regular,Spearpoint Task Force,Stormseers’ Wisdom,15
-CODEX: SPACE MARINES,Regular,Stormlance Task Force,Fury of the Storm,25
-CODEX: SPACE MARINES,Regular,Stormlance Task Force,Hunter’s Instincts,25
-CODEX: SPACE MARINES,Regular,Stormlance Task Force,Portents of Wisdom,15
-CODEX: SPACE MARINES,Regular,Vanguard Spearhead,Execute and Redeploy,20
-CODEX: SPACE MARINES,Regular,Vanguard Spearhead,Ghostweave Cloak,15
-CODEX: SPACE MARINES,Regular,Vanguard Spearhead,Shadow War Veteran,30
-CODEX: SPACE MARINES,Regular,Vanguard Spearhead,The Blade Driven Deep,25
+CODEX: SPACE MARINES,Detachment Enhancement,Adept of the Codex,Gladius Task Force,20
+CODEX: SPACE MARINES,Detachment Enhancement,Artiflcer Armour,Gladius Task Force,10
+CODEX: SPACE MARINES,Detachment Enhancement,Fire Discipline,Gladius Task Force,25
+CODEX: SPACE MARINES,Detachment Enhancement,The Honour Vehement,Gladius Task Force,15
+CODEX: SPACE MARINES,Detachment Enhancement,Iron Laurel,Hammer of Avernii,10
+CODEX: SPACE MARINES,Detachment Enhancement,Medusan Roar,Hammer of Avernii,30
+CODEX: SPACE MARINES,Detachment Enhancement,Spiritus Ferrum,Hammer of Avernii,25
+CODEX: SPACE MARINES,Detachment Enhancement,Steel Font,Hammer of Avernii,15
+CODEX: SPACE MARINES,Detachment Enhancement,Adept of the Omnissiah,Ironstorm Spearhead,35
+CODEX: SPACE MARINES,Detachment Enhancement,Master of Machine War,Ironstorm Spearhead,20
+CODEX: SPACE MARINES,Detachment Enhancement,Target Augury Web,Ironstorm Spearhead,30
+CODEX: SPACE MARINES,Detachment Enhancement,The Flesh is Weak,Ironstorm Spearhead,10
+CODEX: SPACE MARINES,Detachment Enhancement,Celerity,Librarius Conclave,30
+CODEX: SPACE MARINES,Detachment Enhancement,Fusillade,Librarius Conclave,35
+CODEX: SPACE MARINES,Detachment Enhancement,Obfuscation,Librarius Conclave,20
+CODEX: SPACE MARINES,Detachment Enhancement,Prescience,Librarius Conclave,25
+CODEX: SPACE MARINES,Detachment Enhancement,Dedicated Gunship,Orbital Assault Force,15
+CODEX: SPACE MARINES,Detachment Enhancement,Laurels of Thunder,Orbital Assault Force,15
+CODEX: SPACE MARINES,Detachment Enhancement,Orbital Uplink Reliquary,Orbital Assault Force,25
+CODEX: SPACE MARINES,Detachment Enhancement,Veteran of the Vanguard,Orbital Assault Force,20
+CODEX: SPACE MARINES,Detachment Enhancement,Avenging Avatar,Reclamation Force,10
+CODEX: SPACE MARINES,Detachment Enhancement,Liberatum,Reclamation Force,25
+CODEX: SPACE MARINES,Detachment Enhancement,Scroll of Proclamation,Reclamation Force,15
+CODEX: SPACE MARINES,Detachment Enhancement,Seals of Reconquest,Reclamation Force,20
+CODEX: SPACE MARINES,Detachment Enhancement,Blackwing Shroud,Shadowmark Talon,25
+CODEX: SPACE MARINES,Detachment Enhancement,Coronal Susurrant,Shadowmark Talon,30
+CODEX: SPACE MARINES,Detachment Enhancement,Hunter’s Instincts,Shadowmark Talon,25
+CODEX: SPACE MARINES,Detachment Enhancement,Umbral Raptor,Shadowmark Talon,15
+CODEX: SPACE MARINES,Detachment Enhancement,Chogorian Huntmaster,Spearpoint Task Force,25
+CODEX: SPACE MARINES,Detachment Enhancement,Hunter’s Eye,Spearpoint Task Force,20
+CODEX: SPACE MARINES,Detachment Enhancement,Spearpoint Paragon,Spearpoint Task Force,25
+CODEX: SPACE MARINES,Detachment Enhancement,Stormseers’ Wisdom,Spearpoint Task Force,15
+CODEX: SPACE MARINES,Detachment Enhancement,Fury of the Storm,Stormlance Task Force,25
+CODEX: SPACE MARINES,Detachment Enhancement,Hunter’s Instincts,Stormlance Task Force,25
+CODEX: SPACE MARINES,Detachment Enhancement,Portents of Wisdom,Stormlance Task Force,15
+CODEX: SPACE MARINES,Detachment Enhancement,Execute and Redeploy,Vanguard Spearhead,20
+CODEX: SPACE MARINES,Detachment Enhancement,Ghostweave Cloak,Vanguard Spearhead,15
+CODEX: SPACE MARINES,Detachment Enhancement,Shadow War Veteran,Vanguard Spearhead,30
+CODEX: SPACE MARINES,Detachment Enhancement,The Blade Driven Deep,Vanguard Spearhead,25
 CODEX: SPACE WOLVES,Regular,Arjac Rockfist,1 model,105
 CODEX: SPACE WOLVES,Regular,Bjorn the Fell-Handed,1 model,160
 CODEX: SPACE WOLVES,Regular,Blood Claws,10 models,135
@@ -2002,14 +2002,14 @@ CODEX: TYRANIDS,Detachment Enhancement,Adrenalised Onslaught,Unending Swarm,15
 CODEX: TYRANIDS,Detachment Enhancement,Naturalised Camouflage,Unending Swarm,30
 CODEX: TYRANIDS,Detachment Enhancement,Piercing Talons,Unending Swarm,25
 CODEX: TYRANIDS,Detachment Enhancement,Relentless Hunger,Unending Swarm,20
-CODEX: TYRANIDS,Regular,Vanguard Onslaught,Chameleonic,15
-CODEX: TYRANIDS,Regular,Vanguard Onslaught,Hunting Grounds,20
-CODEX: TYRANIDS,Regular,Vanguard Onslaught,Neuronode,20
-CODEX: TYRANIDS,Regular,Vanguard Onslaught,Stalker,10
-CODEX: TYRANIDS,Regular,Warrior Bioform Onslaught,Elevated Might,30
-CODEX: TYRANIDS,Regular,Warrior Bioform Onslaught,Ocular Adaptation,20
-CODEX: TYRANIDS,Regular,Warrior Bioform Onslaught,SensoryAssimilation,20
-CODEX: TYRANIDS,Regular,Warrior Bioform Onslaught,Synaptic Tyrant,10
+CODEX: TYRANIDS,Detachment Enhancement,Chameleonic,Vanguard Onslaught,15
+CODEX: TYRANIDS,Detachment Enhancement,Hunting Grounds,Vanguard Onslaught,20
+CODEX: TYRANIDS,Detachment Enhancement,Neuronode,Vanguard Onslaught,20
+CODEX: TYRANIDS,Detachment Enhancement,Stalker,Vanguard Onslaught,10
+CODEX: TYRANIDS,Detachment Enhancement,Elevated Might,Warrior Bioform Onslaught,30
+CODEX: TYRANIDS,Detachment Enhancement,Ocular Adaptation,Warrior Bioform Onslaught,20
+CODEX: TYRANIDS,Detachment Enhancement,SensoryAssimilation,Warrior Bioform Onslaught,20
+CODEX: TYRANIDS,Detachment Enhancement,Synaptic Tyrant,Warrior Bioform Onslaught,10
 CODEX: WORLD EATERS,Regular,Angron,1 model,340
 CODEX: WORLD EATERS,Regular,Chaos Land Raider,1 model,220
 CODEX: WORLD EATERS,Regular,Chaos Predator Annihilator,1 model,145

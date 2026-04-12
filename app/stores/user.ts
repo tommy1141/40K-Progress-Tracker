@@ -43,10 +43,13 @@ export const useUserStore = defineStore("useUserStore", () => {
   }
 
   const uniqueFactions = computed<Faction[]>(() => {
-    const factions = new Set(userUnits.value.map((unit) => {
-      return { id: unit.factionId, name: unit.factionName } as Faction;
-    }));
-    return Array.from(factions);
+    const seen = new Map<number, Faction>();
+    for (const unit of userUnits.value) {
+      if (!seen.has(unit.factionId)) {
+        seen.set(unit.factionId, { id: unit.factionId, name: unit.factionName } as Faction);
+      }
+    }
+    return Array.from(seen.values());
   });
 
   async function deleteUserUnit(id: number) {
