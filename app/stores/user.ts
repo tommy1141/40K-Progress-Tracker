@@ -49,6 +49,8 @@ export const useUserStore = defineStore("useUserStore", () => {
         seen.set(unit.factionId, { id: unit.factionId, name: unit.factionName } as Faction);
       }
     }
+
+    console.warn("Unique factions:", Array.from(seen.values()));
     return Array.from(seen.values());
   });
 
