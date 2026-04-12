@@ -14,6 +14,7 @@ export default defineEventHandler(async (event) => {
       id: userUnit.id,
       unitId: userUnit.unitId,
       unitName: unit.name,
+      factionId: userUnit.factionId,
       boxedCount: userUnit.boxedCount,
       builtCount: userUnit.builtCount,
       primedCount: userUnit.primedCount,
