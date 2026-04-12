@@ -8,6 +8,53 @@ const props = defineProps<{
 const userStore = useUserStore();
 const showConfirm = ref(false);
 const deleting = ref(false);
+const editing = ref(false);
+const saving = ref(false);
+
+const editValues = reactive({
+  boxedCount: 0,
+  builtCount: 0,
+  primedCount: 0,
+  paintedCount: 0,
+  battleReadyCount: 0,
+});
+
+function startEdit() {
+  editValues.boxedCount = props.userUnit.boxedCount;
+  editValues.builtCount = props.userUnit.builtCount;
+  editValues.primedCount = props.userUnit.primedCount;
+  editValues.paintedCount = props.userUnit.paintedCount;
+  editValues.battleReadyCount = props.userUnit.battleReadyCount;
+  editing.value = true;
+}
+
+async function saveEdit() {
+  saving.value = true;
+  try {
+    await $fetch(`/api/user-unit/${props.userUnit.id}`, {
+      method: "PATCH",
+      body: {
+        boxedCount: Number(editValues.boxedCount),
+        builtCount: Number(editValues.builtCount),
+        primedCount: Number(editValues.primedCount),
+        paintedCount: Number(editValues.paintedCount),
+        battleReadyCount: Number(editValues.battleReadyCount),
+      },
+    });
+    const unit = userStore.userUnits.find(u => u.id === props.userUnit.id);
+    if (unit) {
+      unit.boxedCount = Number(editValues.boxedCount);
+      unit.builtCount = Number(editValues.builtCount);
+      unit.primedCount = Number(editValues.primedCount);
+      unit.paintedCount = Number(editValues.paintedCount);
+      unit.battleReadyCount = Number(editValues.battleReadyCount);
+    }
+    editing.value = false;
+  }
+  finally {
+    saving.value = false;
+  }
+}
 
 type CountKey = "boxedCount" | "builtCount" | "primedCount" | "paintedCount" | "battleReadyCount";
 const progressionMap: Record<CountKey, CountKey | null> = {
@@ -62,7 +109,7 @@ async function confirmDelete() {
       <td>{{ userUnit.factionName }}</td>
       <td>{{ userUnit.unitName }}</td>
       <td class="text-center">
-        <span class="inline-flex items-center gap-2">
+        <span v-if="!editing" class="inline-flex items-center gap-2">
           <span class="inline-flex flex-col">
             <button class="btn btn-ghost btn-xs p-0 opacity-50 h-4 min-h-0" @click="adjustBoxed(1)">
               <Icon name="tabler:plus" size="14" />
@@ -76,9 +123,10 @@ async function confirmDelete() {
             <Icon name="tabler:square-rounded-arrow-right" size="16" />
           </button>
         </span>
+        <input v-else v-model.number="editValues.boxedCount" type="number" min="0" class="input input-xs w-16 text-center">
       </td>
       <td class="text-center">
-        <span class="inline-flex items-center gap-1">
+        <span v-if="!editing" class="inline-flex items-center gap-1">
           <button v-if="userUnit.builtCount > 0" class="btn btn-ghost btn-xs p-0 opacity-50" @click="revert('builtCount')">
             <Icon name="tabler:square-rounded-arrow-left" size="16" />
           </button>
@@ -87,9 +135,10 @@ async function confirmDelete() {
             <Icon name="tabler:square-rounded-arrow-right" size="16" />
           </button>
         </span>
+        <input v-else v-model.number="editValues.builtCount" type="number" min="0" class="input input-xs w-16 text-center">
       </td>
       <td class="text-center">
-        <span class="inline-flex items-center gap-1">
+        <span v-if="!editing" class="inline-flex items-center gap-1">
           <button v-if="userUnit.primedCount > 0" class="btn btn-ghost btn-xs p-0 opacity-50" @click="revert('primedCount')">
             <Icon name="tabler:square-rounded-arrow-left" size="16" />
           </button>
@@ -98,9 +147,10 @@ async function confirmDelete() {
             <Icon name="tabler:square-rounded-arrow-right" size="16" />
           </button>
         </span>
+        <input v-else v-model.number="editValues.primedCount" type="number" min="0" class="input input-xs w-16 text-center">
       </td>
       <td class="text-center">
-        <span class="inline-flex items-center gap-1">
+        <span v-if="!editing" class="inline-flex items-center gap-1">
           <button v-if="userUnit.paintedCount > 0" class="btn btn-ghost btn-xs p-0 opacity-50" @click="revert('paintedCount')">
             <Icon name="tabler:square-rounded-arrow-left" size="16" />
           </button>
@@ -109,19 +159,34 @@ async function confirmDelete() {
             <Icon name="tabler:square-rounded-arrow-right" size="16" />
           </button>
         </span>
+        <input v-else v-model.number="editValues.paintedCount" type="number" min="0" class="input input-xs w-16 text-center">
       </td>
       <td class="text-center">
-        <span class="inline-flex items-center gap-1">
+        <span v-if="!editing" class="inline-flex items-center gap-1">
           <button v-if="userUnit.battleReadyCount > 0" class="btn btn-ghost btn-xs p-0 opacity-50" @click="revert('battleReadyCount')">
             <Icon name="tabler:square-rounded-arrow-left" size="16" />
           </button>
           {{ userUnit.battleReadyCount }}
         </span>
+        <input v-else v-model.number="editValues.battleReadyCount" type="number" min="0" class="input input-xs w-16 text-center">
       </td>
       <td class="text-center">
-        <button class="btn btn-ghost btn-sm text-error" @click="showConfirm = true">
-          <Icon name="tabler:trash" size="18" />
-        </button>
+        <template v-if="!editing">
+          <button class="btn btn-ghost btn-sm text-info" @click="startEdit">
+            <Icon name="tabler:pencil" size="18" />
+          </button>
+          <button class="btn btn-ghost btn-sm text-error" @click="showConfirm = true">
+            <Icon name="tabler:trash" size="18" />
+          </button>
+        </template>
+        <template v-else>
+          <button class="btn btn-ghost btn-sm text-success" :disabled="saving" @click="saveEdit">
+            <Icon name="tabler:device-floppy" size="18" />
+          </button>
+          <button class="btn btn-ghost btn-sm" :disabled="saving" @click="editing = false">
+            <Icon name="tabler:x" size="18" />
+          </button>
+        </template>
       </td>
     </tr>
   </tbody>

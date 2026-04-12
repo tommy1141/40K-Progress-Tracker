@@ -15,6 +15,13 @@
       "when": 1775910060057,
       "tag": "0001_neat_sabra",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1776000356952,
+      "tag": "0002_military_living_tribunal",
+      "breakpoints": true
     }
   ]
 }
