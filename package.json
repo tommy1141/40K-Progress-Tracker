@@ -29,17 +29,17 @@
     "@vee-validate/nuxt": "^4.15.1",
     "better-auth": "^1.7.7",
     "csv": "^6.5.1",
-    "csv-parse": "^6.2.1",
+    "csv-parse": "^7.0.2",
     "csv-parser": "^3.2.0",
     "daisyui": "^5.5.19",
     "drizzle-orm": "^0.45.2",
     "eslint": "^10.1.0",
-    "nuxt": "^4.4.2",
+    "nuxt": "^4.6.3",
     "pinia": "^3.0.4",
     "tailwindcss": "^4.2.2",
     "vue": "^3.5.31",
     "vue-router": "^5.0.4",
-    "zod": "^4.3.6"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^7.7.3",
